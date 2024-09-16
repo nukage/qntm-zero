@@ -1,0 +1,52 @@
+.icon-list-block {
+	@apply bg-primary py-100 lg:py-[16rem] text-white relative overflow-clip;
+
+	background: 197.778% 175.391% no-repeat,
+		linear-gradient(117deg, #03624f 0%, #00856a 100%);
+
+	> .container-2xl {
+		@apply relative z-1;
+	}
+	&__bg {
+		@apply absolute  top-[calc(50%-1200px)] right-[-54%] opacity-30;
+	}
+	&__heading {
+		@apply h2style text-light-green mb-20 max-w-[77rem];
+	}
+	&__content {
+		@apply max-w-[77rem];
+	}
+	&__icons-wrap {
+		@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-40 2xl:gap-80  mt-40 md:mt-80;
+	}
+	&__icon-file {
+		@apply !fill-bright-yellow mb-20;
+	}
+	&__icon-headline {
+		@apply text-light-green text-24 mb-10 font-primary font-700 leading-[120%];
+	}
+
+	&__icon-link {
+		@apply text-bright-yellow tran border-white border-b-2 border-opacity-0 inline;
+		@apply text-18 font-primary font-600;
+		svg {
+			@apply tran translate-y-[-1px];
+		}
+		&:hover {
+			@apply text-white border-opacity-100;
+			svg {
+				@apply fill-white translate-x-3;
+			}
+		}
+	}
+	&__icon-content {
+		@apply mb-20;
+		p {
+			@apply text-14;
+		}
+	}
+
+	&__arrow {
+		@apply inline fill-bright-yellow   h-24 relative top-[-1px];
+	}
+}

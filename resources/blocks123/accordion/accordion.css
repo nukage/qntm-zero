@@ -1,0 +1,105 @@
+body,
+.editor-styles-wrapper {
+	.qntm-pathways-accordion {
+		&__wrap {
+			@apply flex lg:flex-row flex-col;
+		}
+		&__title {
+			@apply lg:!absolute top-0 lg:right-[100px] z-1 lg:w-[465px] text-center uppercase  text-lg  text-primary   max-lg:py-24 no-underline;
+			@screen lg {
+				transform: rotate(270deg);
+			}
+
+			transform-origin: top right;
+		}
+		&__headline {
+			@apply text-primary mb-10  text-x-lg;
+		}
+		&__content {
+			@apply mb-20 lg:max-w-[480px];
+			p {
+				@apply text-sm;
+			}
+		}
+		&__link {
+			@apply max-lg:mx-auto;
+		}
+		&__arrow {
+			@apply !absolute bottom-[55px] right-[70px];
+			@apply max-lg:top-[21px] max-lg:right-[30px];
+
+			transform: rotate(90deg);
+			@screen lg {
+				transform: rotate(0deg);
+			}
+			svg {
+				@apply fill-secondary;
+			}
+		}
+		&__tab {
+			@apply w-full lg:w-[260px] relative lg:max-h-[465px] overflow-clip   duration-500 cursor-pointer;
+			@apply border-primary border border-solid border-opacity-25;
+			transition-property: width, height;
+			@screen lg {
+				background-size: 900px auto;
+			}
+
+			> * {
+				@apply relative;
+			}
+			&-wrap {
+				@apply opacity-0  duration-300 flex flex-col justify-end items-start    lg:h-full pb-32 pt-[160px] px-20 lg:p-64 ease-out;
+			}
+
+			&:not(.qntm-pathways-accordion__tab--active) {
+				@apply max-lg:h-80 lg:w-[180px];
+			}
+			&__title {
+			}
+			&::before {
+				@apply absolute top-0 left-0 right-0 bottom-0 w-full h-full;
+				content: "";
+			}
+			&:nth-child(1),
+			&:nth-child(3) {
+				&:not(.qntm-pathways-accordion__tab--active) {
+					/* &::before {
+						background: linear-gradient(
+							270deg,
+							#056387 -0.14%,
+							#007cad 99.86%
+						) !important;
+						@screen lg {
+							background: linear-gradient(
+								180deg,
+								#056387 0%,
+								#007cad 100%
+							) !important;
+						}
+					} */
+				}
+			}
+			&:nth-child(2):not(.qntm-pathways-accordion__tab--active)::before {
+				@apply bg-secondary bg-opacity-5;
+			}
+			&.qntm-pathways-accordion__tab--active {
+				@apply w-full cursor-default h-auto lg:flex-grow lg:basis-0;
+
+				&::before {
+					@apply top-0 right-0 bottom-0 left-0 absolute;
+					content: "";
+					/* background: linear-gradient(180deg, #007cad00 50%, #056387 100%); */
+				}
+				.qntm-pathways-accordion__title {
+					@apply opacity-0;
+				}
+				.qntm-pathways-accordion__tab-wrap {
+					@apply opacity-100;
+				}
+				.qntm-pathways-accordion__arrow {
+					@apply opacity-0;
+				}
+			}
+		}
+	}
+}

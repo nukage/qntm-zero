@@ -1,0 +1,23 @@
+{
+    "name": "acf/slideout-menu",
+    "title": "Slideout Menu",
+    "description": "A hamburger menu that slides out from the side",
+    "category": "qntm-global-blocks",
+    "script": "qntm-slideout-menu",
+    "style": "qntm-slideout-menu",
+    "icon": "images/icon.svg",
+    "keywords": [
+        "expand",
+        "menu",
+        "hamburger",
+        "header"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slideout-menu.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": false
+    }
+}

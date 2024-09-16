@@ -1,0 +1,114 @@
+.form-block {
+	/* @apply mt-[16rem] mb-80; */
+
+	h5 {
+		@apply font-secondary font-700;
+	}
+
+	&__headline {
+		@apply h2style mb-16 lg:mb-20 max-w-[77rem];
+	}
+	&__content {
+		@apply bodytxt max-w-[77rem] mb-60 lg:mb-80;
+	}
+	&__wrap {
+		@apply flex  flex-col md:flex-row;
+		> div {
+			@apply w-full md:w-1/2 text-white px-40 md:px-80 py-64;
+		}
+	}
+
+	&__left-col {
+		@apply max-md:border-borderblue max-md:border-b;
+		background: linear-gradient(180deg, #16588e 0%, #1b75bb 100%);
+	}
+	&__left-headline,
+	&__right-headline {
+		@apply font-primary font-700;
+	}
+	&__left-items {
+		@apply relative text-18 leading-[155%] mt-30;
+		> div,
+		a {
+			@apply block ml-48 mb-25;
+		}
+
+		h5 {
+			@apply text-18 mb-5;
+		}
+
+		img {
+			@apply absolute left-[0.1rem];
+			transform: translateY(-3px);
+		}
+	}
+	&__right-col {
+		background: linear-gradient(180deg, #1b75bb 0%, #16588e 100%);
+	}
+	&__left-headline,
+	&__right-headline {
+		@apply text-32 tracking-[116%];
+	}
+	&__left-headline {
+		@apply mb-20;
+	}
+	&__right-headline {
+		@apply text-center;
+	}
+	&__left-content > p {
+		@apply text-14;
+	}
+	.gfield_required {
+		@apply !text-white;
+	}
+	.gform_required_legend {
+		@apply text-center text-14 mt-5 mb-30;
+	}
+	.gform_fields {
+		@apply gap-y-[2.2rem] !important;
+	}
+	.gform_fields > div > {
+		label {
+			@apply absolute text-white font-primary tran top-[8px] left-[12px];
+		}
+
+		.ginput_container {
+			input,
+			textarea {
+				@apply bg-white bg-opacity-0 border-t-0 border-l-0 border-r-0 border-b border-borderblue text-white font-primary;
+			}
+			textarea {
+				@apply !h-20;
+				/* min-block-size: 18rem; */
+			}
+		}
+	}
+	.focused label {
+		@apply opacity-0;
+	}
+	.gfield {
+		@apply relative;
+	}
+
+	.gform_confirmation_message {
+		@apply text-18 mt-30;
+	}
+
+	.gform_required_legend {
+		@apply text-14 font-500 mt-10  invisible relative;
+		&:after {
+			@apply absolute visible opacity-100 top-0 left-[calc(50%-60px)];
+			content: "* Required Field";
+		}
+	}
+
+	.gform_footer {
+		button.gform-clear {
+			@apply max-sm:hidden uppercase text-borderblue bg-opacity-0 bg-white px-48 py-16 inline-block font-primary font-600 text-18 tracking-[1px] leading-[100%] mx-auto mt-30 !important;
+			@apply rounded-none border border-borderblue border-solid !important;
+		}
+		[type="submit"] {
+			@apply border-none uppercase text-white bg-red px-48 py-16 inline-block font-primary font-600 text-18 tracking-[1px] leading-[100%] mx-auto mt-30 !important;
+		}
+	}
+}

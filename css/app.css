@@ -1,0 +1,83 @@
+/* @import "tailwindcss/base"; */
+.sticky {
+    position: sticky
+}
+.block {
+    display: block
+}
+.flex {
+    display: flex
+}
+.table {
+    display: table
+}
+.grid {
+    display: grid
+}
+.w-1\/2 {
+    width: 50%
+}
+.w-1\/3 {
+    width: 33.333333%
+}
+.w-full {
+    width: 100%
+}
+.border {
+    border-width: 1px
+}
+.outline {
+    outline-style: solid
+}
+.alignfull {
+    margin: 2rem calc(50% - 50vw) !important;
+    max-width: 100vw !important;
+    width: 100vw
+}
+.alignwide {
+    margin: 2rem 0;
+    max-width: 1280px !important
+}
+.alignnone {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+    max-width: 100%
+}
+.aligncenter {
+    margin: 0.5rem auto;
+    display: block
+}
+@media (min-width: 600px) {
+    .alignleft:not(.wp-block-button) {
+        margin-right: 0.5rem;
+        float: left
+    }
+    .alignright:not(.wp-block-button) {
+        margin-left: 0.5rem;
+        float: right
+    }
+    .wp-block-button.alignleft a {
+        float: left;
+        margin-right: 1rem
+    }
+    .wp-block-button.alignright a {
+        float: right;
+        margin-left: 1rem
+    }
+}
+.wp-caption {
+    display: inline-block
+}
+.wp-caption img {
+    margin-bottom: 0.5rem;
+    line-height: none
+}
+.wp-caption-text {
+    font-size: 1;
+    color: #4b5563
+}
+body .wp-block-heading {
+    margin-bottom: clamp(15px, 2vw, 20px)
+}
+

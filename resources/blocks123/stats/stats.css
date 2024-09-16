@@ -1,0 +1,38 @@
+.stat-block {
+	@apply py-80;
+	> div {
+		@apply flex lg:flex-row flex-col;
+		> div {
+			@apply lg:w-1/2;
+		}
+	}
+	&__headline {
+		@apply h2style mb-15;
+	}
+	&__content {
+		@apply bodytxt;
+	}
+	&__mobile-link {
+		@apply q-button lg:hidden mx-auto text-center inline-block mt-40;
+	}
+	&__link {
+		@apply max-lg:hidden q-button;
+	}
+
+	&__col-one {
+		@apply lg:pr-80;
+	}
+	&__col-two {
+		@apply grid grid-cols-1 xs:grid-cols-2 gap-40 h-full;
+	}
+	&__item {
+		@apply text-center;
+	}
+
+	&__number {
+		@apply text-48 md:text-80 font-700 leading-[100%] text-secondary font-primary text-center mb-5;
+	}
+	&__stat-content {
+		@apply text-14 leading-[142%];
+	}
+}

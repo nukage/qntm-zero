@@ -1,0 +1,131 @@
+.events-block {
+	@apply relative overflow-clip py-100 lg:px-[16rem];
+	> .container-2xl {
+		@apply lg:flex;
+		> div {
+			@apply w-full lg:w-1/2;
+		}
+	}
+
+	&__bg {
+		@apply absolute  top-[calc(100%-1200px)] left-[-54%] opacity-50;
+	}
+	&__headline {
+		@apply h2style mb-16 lg:mb-30;
+	}
+	&__content {
+		@apply bodytxt;
+	}
+	&__link {
+		@apply q-button mx-auto inline-block text-center mb-40;
+		&-wrap {
+			@apply max-lg:text-center;
+		}
+	}
+
+	&__col-one {
+		@apply lg:pr-80;
+	}
+
+	&__col-two {
+		@apply text-20;
+	}
+}
+
+.event-item {
+	@apply bg-white;
+	&:not(:first-of-type) .event-item__top {
+		@apply border-t border-borderblue border-opacity-45;
+	}
+
+	&__top {
+		@apply flex p-16 text-secondary max-md:text-16 font-primary relative cursor-pointer tran items-center;
+
+		.active &,
+		&:hover {
+			@apply text-white;
+			background: linear-gradient(90deg, #056387 0%, #007cad 100%);
+			.carbon svg {
+				@apply fill-white;
+			}
+		}
+		&::before {
+			@apply absolute top-0 bottom-0 left-0 right-0 z-0 opacity-0 tran;
+			content: "";
+			background: linear-gradient(90deg, #00856a 0%, #007cad 100%);
+		}
+		&:hover::before {
+			@apply opacity-100;
+		}
+		> div {
+			@apply relative z-2;
+		}
+	}
+	&__start-date {
+		@apply w-[12rem] font-700 uppercase;
+	}
+	&__title {
+		@apply w-full pr-15;
+	}
+	&__main {
+		@apply p-32;
+		background: linear-gradient(
+			180deg,
+			#d8efee 0%,
+			rgba(216, 239, 238, 0) 100%
+		);
+	}
+	&__image {
+		@apply mb-32 object-cover w-full;
+		aspect-ratio: 54 / 28;
+	}
+	&__description {
+		@apply text-14 mb-24;
+	}
+	&__link {
+		@apply text-red text-18 relative font-600 tran;
+		&:hover {
+			svg {
+				transform: translateX(24%);
+			}
+		}
+		svg {
+			@apply tran absolute top-[-1px] right-[-3.2rem] fill-red h-[2.2rem];
+		}
+	}
+	.carbon {
+		@apply w-32 h-32;
+		svg {
+			@apply tran fill-secondary;
+		}
+	}
+	.img_carbon_close {
+		@apply opacity-0 transition-opacity duration-150;
+	}
+	.img_carbon_upDown {
+		@apply opacity-100 transition-opacity duration-150;
+	}
+	&.active {
+		svg.img_carbon_close {
+			@apply opacity-100;
+		}
+		svg.img_carbon_upDown {
+			@apply opacity-0;
+		}
+	}
+	&:not(.active) {
+		svg.img_carbon_close {
+			@apply opacity-0;
+		}
+		svg.img_carbon_upDown {
+			@apply opacity-100;
+		}
+	}
+	.carbon {
+		svg {
+			@apply cursor-pointer h-25;
+			@apply right-0 top-[1px];
+			@apply absolute;
+		}
+	}
+}

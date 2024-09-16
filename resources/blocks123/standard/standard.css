@@ -1,0 +1,26 @@
+.standard-block {
+	@apply mt-80 md:mt-[16rem] mb-60 md:mb-80;
+
+	&__wrap {
+		@apply lg:flex flex-nowrap gap-80;
+	}
+	&__headline {
+		@apply h2style max-lg:mb-16;
+	}
+
+	&__headline,
+	&__content {
+		@apply lg:w-1/2;
+	}
+	&--full-width {
+		.standard-block__headline,
+		.standard-block__content {
+			@apply lg:w-full;
+		}
+		.wysiwyg {
+			p {
+				@apply mb-30;
+			}
+		}
+	}
+}

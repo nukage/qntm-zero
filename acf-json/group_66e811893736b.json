@@ -1,0 +1,51 @@
+{
+    "key": "group_66e811893736b",
+    "title": "Global: Slideout Menu",
+    "fields": [
+        {
+            "key": "field_66e811891a000",
+            "label": "Select Nav Menu",
+            "name": "navigation_menu",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Enter the slug of the menu i.e. 'primary-menu'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "primary-menu": "Primary Menu"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/slideout-menu"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1726486455
+}

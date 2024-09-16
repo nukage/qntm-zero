@@ -1,0 +1,67 @@
+.checkerboard-block {
+	@apply overflow-clip relative py-100 lg:px-[16rem];
+
+	&__bg {
+		@apply absolute z-[-1] top-[-90%] right-[-50%] pointer-events-none;
+		&2,
+		&3 {
+			@apply absolute top-0 left-0;
+		}
+		&3 {
+			@apply hidden;
+		}
+	}
+	&__headline {
+		@apply h2style mb-16 lg:mb-24 max-w-[77rem];
+	}
+	&__content {
+		@apply bodytxt max-w-[77rem];
+	}
+
+	&__wrap {
+	}
+	&-item {
+		&__wrap {
+			@apply flex flex-col-reverse lg:flex-row my-48 lg:my-80 gap-40 xl:gap-60 2xl:gap-80;
+
+			&:nth-child(2n) {
+				@apply lg:flex-row-reverse;
+			}
+
+			&--right {
+				@apply lg:flex-row-reverse;
+				.checkerboard-item__image {
+					@apply lg:pl-96;
+				}
+			}
+			&--left .checkerboard-item__image {
+				@apply lg:pr-96;
+			}
+		}
+		&__content,
+		&__image {
+			@apply w-full lg:w-1/2;
+		}
+		&__image img {
+			@apply w-full;
+		}
+
+		&__heading {
+			@apply h2style text-36 lg:text-48 text-secondary mb-16 lg:mb-24;
+		}
+		&__buttons {
+			@apply flex justify-between;
+		}
+		&__text {
+			@apply bodytxt;
+		}
+		&__link {
+			@apply q-button;
+		}
+	}
+	&--meet-our-team {
+		.checkerboard-block-item__heading {
+			@apply text-primary xl:text-68;
+		}
+	}
+}

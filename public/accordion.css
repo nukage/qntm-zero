@@ -1,0 +1,224 @@
+.accordion-block {
+	color: #fff;
+}
+	.accordion-block__wrap {
+	display: flex;
+	flex-direction: column;
+}
+	@media (min-width: 960px) {
+	.accordion-block__wrap {
+		flex-direction: row;
+	}
+}
+	.accordion-block__title {
+	top: 0;
+	z-index: 1;
+	text-align: center;
+	font-family: Saira, sans-serif, helvetica, arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+	color: #4c1d95;
+}
+	@media not all and (min-width: 960px) {
+	.accordion-block__title {
+		padding-top: 2.4rem;
+		padding-bottom: 2.4rem;
+	}
+}
+	@media (min-width: 960px) {
+	.accordion-block__title {
+		position: absolute !important;
+		right: 100px;
+		width: 465px;
+		font-size: 2.4rem;
+		letter-spacing: 4.8px;
+			transform: rotate(270deg);
+	}
+}
+	.accordion-block__title {
+
+		transform-origin: top right;
+}
+	.accordion-block__headline {
+	margin-bottom: 1rem;
+	font-family: Saira, sans-serif, helvetica, arial, sans-serif;
+	font-size: 3.2rem;
+	font-weight: 700;
+	color: #4c1d95;
+}
+	@media not all and (min-width: 1064px) {
+	.accordion-block__headline {
+		line-height: 115%;
+	}
+}
+	@media (min-width: 960px) {
+	.accordion-block__headline {
+		font-size: 4.4rem;
+	}
+}
+	.accordion-block__content {
+	margin-bottom: 2rem;
+}
+	@media (min-width: 960px) {
+	.accordion-block__content {
+		max-width: 48rem;
+	}
+}
+	.accordion-block__content p {
+	font-size: 1.4rem;
+}
+	@media not all and (min-width: 960px) {
+	.accordion-block__link {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+	.accordion-block__arrow {
+	position: absolute !important;
+	bottom: 5.5rem;
+	right: 70px;
+}
+	@media not all and (min-width: 960px) {
+	.accordion-block__arrow {
+		top: 2.1rem;
+		right: 30px;
+	}
+}
+	.accordion-block__arrow {
+
+		transform: rotate(90deg);
+	}
+	@media (min-width: 960px) {
+	.accordion-block__arrow {
+			transform: rotate(0deg)
+	}
+		}
+	.accordion-block__tab {
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	overflow: clip;
+	transition-duration: 500ms;
+}
+	@media (min-width: 960px) {
+	.accordion-block__tab {
+		max-height: 46.5rem;
+		width: 26rem;
+	}
+}
+	.accordion-block__tab {
+		transition-property: width, height;
+	}
+	@media (min-width: 960px) {
+	.accordion-block__tab {
+			background-size: 900px auto
+	}
+		}
+	.accordion-block__tab > * {
+	position: relative;
+}
+	.accordion-block__tab-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 3.2rem;
+	padding-top: 16rem;
+	opacity: 0;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+	@media (min-width: 960px) {
+	.accordion-block__tab-wrap {
+		height: 100%;
+		padding: 6.4rem;
+	}
+}
+	@media not all and (min-width: 960px) {
+	.accordion-block__tab:not(.accordion-block__tab--active) {
+		height: 8rem;
+	}
+}
+	@media (min-width: 960px) {
+	.accordion-block__tab:not(.accordion-block__tab--active) {
+		width: 18rem;
+	}
+}
+	.accordion-block__tab__title {
+		}
+	.accordion-block__tab::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+			content: "";
+}
+	.accordion-block__tab:nth-child(1):not(.accordion-block__tab--active)::before, .accordion-block__tab:nth-child(3):not(.accordion-block__tab--active)::before {
+					background: linear-gradient(
+						270deg,
+						#056387 -0.14%,
+						#007cad 99.86%
+					) !important;
+				}
+	@media (min-width: 960px) {
+	.accordion-block__tab:nth-child(1):not(.accordion-block__tab--active)::before, .accordion-block__tab:nth-child(3):not(.accordion-block__tab--active)::before {
+						background: linear-gradient(
+							180deg,
+							#056387 0%,
+							#007cad 100%
+						) !important
+				}
+					}
+	.accordion-block__tab:nth-child(2):not(.accordion-block__tab--active)::before {
+			background: linear-gradient(
+				270deg,
+				#007cad -0.14%,
+				#056387 99.86%
+			) !important;
+		}
+	@media (min-width: 960px) {
+	.accordion-block__tab:nth-child(2):not(.accordion-block__tab--active)::before {
+				background: linear-gradient(
+					180deg,
+					#007cad 0%,
+					#056387 100%
+				) !important
+		}
+			}
+	.accordion-block__tab.accordion-block__tab--active {
+	height: auto;
+	width: 100%;
+	cursor: default;
+}
+	@media (min-width: 960px) {
+	.accordion-block__tab.accordion-block__tab--active {
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+}
+	.accordion-block__tab.accordion-block__tab--active::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+				content: "";
+				background: linear-gradient(180deg, #007cad00 50%, #056387 100%);
+}
+	.accordion-block__tab.accordion-block__tab--active .accordion-block__title {
+	opacity: 0;
+}
+	.accordion-block__tab.accordion-block__tab--active .accordion-block__tab-wrap {
+	opacity: 1;
+}
+	.accordion-block__tab.accordion-block__tab--active .accordion-block__arrow {
+	opacity: 0;
+}
+

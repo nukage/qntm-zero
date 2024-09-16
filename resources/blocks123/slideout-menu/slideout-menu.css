@@ -1,0 +1,97 @@
+.slideout-nav {
+	@apply max-xs:w-full px-50 sm:px-80 md:px-120 top-0 right-0 fixed bg-white  h-full flex flex-col justify-center items-center font-primary  z-10 text-contrast;
+
+	&.active {
+		box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.24);
+	}
+	&:not(.active) {
+		transform: translateX(100%);
+	}
+
+	&__toggle {
+		@apply bg-tertiary fixed right-0 top-0 py-50 md:py-80 px-7 md:px-12  md:hover:bg-secondary z-[11];
+		img {
+			@apply max-md:w-25;
+		}
+		&:hover img,
+		&.active img {
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+				saturate(7495%) hue-rotate(341deg) brightness(100%) contrast(102%);
+		}
+		&.active img {
+			transform: scaleX(-100%);
+		}
+		&.active {
+			@apply bg-secondary;
+		}
+	}
+
+	&__menu-wrapper {
+		@apply max-md:w-full;
+	}
+
+	&__menu {
+		@apply w-full md:w-[38rem];
+		> li {
+			/* TOP LEVEL MENU ITEMS */
+			@apply px-15 text-2x-lg text-primary font-600 pb-24 my-20 hover:text-secondary  relative;
+			&:not(:last-child) {
+				@apply border-b-[2px] border-primary border-dotted;
+			}
+			> a img {
+				@apply transition-opacity duration-200 absolute right-0 top-0;
+			}
+			> a .carbon {
+				@apply relative inline-block h-[2.7rem] w-32 left-5;
+			}
+
+			.img_carbon_arrow-right-green {
+				@apply inline relative left-[1rem] top-[-0.2rem];
+			}
+
+			&:hover {
+				.img_carbon_upDown,
+				.img_carbon_arrow-right-green {
+					filter: brightness(0) saturate(100%) invert(11%) sepia(99%)
+						saturate(6439%) hue-rotate(329deg) brightness(81%) contrast(102%);
+				}
+			}
+
+			&.active {
+				@apply text-secondary;
+				.img_carbon_upDown {
+					@apply opacity-0;
+				}
+			}
+			&:not(.active) {
+				.img_carbon_close {
+					@apply opacity-0;
+				}
+			}
+
+			> ul {
+				/* SUBMENU */
+				@apply font-secondary font-500 mt-10;
+				> li {
+					@apply text-contrast  text-md   mb-5;
+					a {
+						@apply relative;
+					}
+					a::after {
+						@apply absolute top-[0.1rem] right-[-2.8rem];
+						content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M13.5 4.5L12.4275 5.54475L18.1125 11.25H3V12.75H18.1125L12.4275 18.4298L13.5 19.5L21 12L13.5 4.5Z' fill='%2325464A'/%3E%3C/svg%3E");
+						transition-property: right;
+					}
+					&:hover {
+						@apply text-secondary;
+						a:after {
+							@apply right-[-3rem];
+							filter: invert(12%) sepia(75%) saturate(6634%) hue-rotate(327deg)
+								brightness(86%) contrast(105%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
