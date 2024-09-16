@@ -19,8 +19,6 @@ $blockLocation = get_template_directory_uri() . '/resources/blocks/accordion';
 $arrow_svg_file = $blockLocation . '/images/carbon_pan-horizontal.svg';
 $arrow_svg = file_get_contents($arrow_svg_file);
 
-
-
 ?>
 
 

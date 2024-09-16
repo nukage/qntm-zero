@@ -18,7 +18,6 @@ add_action('init', 'qntm_register_slideout_menu_style');
 
 function qntm_slideout_menu_setup()
 {
-
 	register_nav_menus(
 		array(
 			'slideout' => __('Slideout Menu', 'qntm'),

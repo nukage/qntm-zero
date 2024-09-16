@@ -6,7 +6,17 @@
 require_once 'qntm-blocks.php'; // ACF Gutenberg Blocks
 require_once 'qntm-utilities.php'; // Utility Functions that are used in multiple blocks
 
+// function qntm_setup()
+// {
 
+//     register_nav_menus(
+//         array(
+//             'primary' => __('Primary Menu', 'qntm'),
+//             'footer' => __('Footer Utility Menu', 'qntm'),
+//         )
+//     );
+// }
+// add_action('after_setup_theme', 'qntm_setup');
 
 
 

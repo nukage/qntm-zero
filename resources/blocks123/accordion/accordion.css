@@ -13,10 +13,10 @@ body,
 			transform-origin: top right;
 		}
 		&__headline {
-			@apply text-primary mb-10  text-x-lg;
+			@apply text-primary mb-10  text-x-lg m-30;
 		}
 		&__content {
-			@apply mb-20 lg:max-w-[480px];
+			@apply mb-20 lg:max-w-[480px] mb-20 text-contrast;
 			p {
 				@apply text-sm;
 			}
