@@ -1,0 +1,176 @@
+{
+    "key": "group_cards-grid-block-23452567",
+    "title": "Cards Grid with Title",
+    "fields": [
+        {
+            "key": "field_message_cards-grid-block-23452567",
+            "label": "Cards Grid with Title",
+            "name": "message_cards-grid-block",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "A grid of cards, with title and description",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_758764757632",
+            "label": "Title",
+            "name": "cards-grid-block__headline",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_3456345345",
+            "label": "Content",
+            "name": "cards-grid-block__content",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_card_34533464",
+            "label": "List of Cards",
+            "name": "cards-grid-block__card",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "This is a repeater of card items.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Card",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_653426436342",
+                    "label": "Card Image",
+                    "name": "cards-grid-block__item-image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Add an image for your card!",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_card-title-74635735",
+                    "label": "Card Title",
+                    "name": "cards-grid-block__item-headline",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Add the title card to the card title",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_card-content-2345345",
+                    "label": "Card Content",
+                    "name": "cards-grid-block__item-content",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Add the card content to the card for the content card. ",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/cards-grid-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "A grid of cards, with title and description",
+    "show_in_rest": 0
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/cards-grid-block",
+    "title": "Cards Grid with Title",
+    "description": "A grid of cards, with title and description",
+    "category": "nkg-blocks",
+    "style": "cards-grid-block",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "cards-grid-block.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "jsx": false
+    }
+}

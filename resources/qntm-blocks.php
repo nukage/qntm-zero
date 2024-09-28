@@ -3,22 +3,45 @@
 /**
  * Load Blocks
  */
-function qntm_load_blocks()
-{
+
+$styles = array();
+// function qntm_load_blocks()
+// {
+//     $theme  = wp_get_theme();
+//     $blocks = qntm_get_blocks();
+//     foreach ($blocks as $block) {
+
+//         if (file_exists(get_template_directory() . '/resources/blocks/' . $block . '/block.json')) {
+//             register_block_type(get_template_directory() . '/resources/blocks/' . $block . '/block.json');
+//             if (file_exists(get_template_directory()  .  '/resources/blocks/' . $block . '/style.css')) {
+//                 echo '3245345345';
+//                 echo $block;
+//                 wp_register_style('block-' . $block, get_template_directory()  . '/resources/blocks/' . $block . '/style.css');
+//                 array_push($styles, 'block-' . $block);
+//             }
+
+//             if (file_exists(get_template_directory() . '/resources/blocks/' . $block . '/init.php')) {
+//                 include_once get_template_directory() . '/resources/blocks/' . $block . '/init.php';
+//             }
+//         }
+//     }
+// }
+add_action('init', function () use ($styles) {
     $theme  = wp_get_theme();
     $blocks = qntm_get_blocks();
     foreach ($blocks as $block) {
+
         if (file_exists(get_template_directory() . '/resources/blocks/' . $block . '/block.json')) {
             register_block_type(get_template_directory() . '/resources/blocks/' . $block . '/block.json');
-            //wp_register_style( 'block-' . $block, get_template_directory_uri() . '/blocks/' . $block . '/style.css', null, $theme->get( 'Version' ) );
-
-            if (file_exists(get_template_directory() . '/resources/blocks/' . $block . '/init.php')) {
-                include_once get_template_directory() . '/resources/blocks/' . $block . '/init.php';
+            if (file_exists(get_template_directory()  .  '/resources/blocks/' . $block . '/style.css')) {
+                // wp_register_style('qntm-' . $block, get_template_directory()  . '/resources/blocks/' . $block . '/style.css');
             }
+            include get_template_directory() . '/resources/blocks/qntm-block-init.php';
         }
     }
-}
-add_action('init', 'qntm_load_blocks', 5);
+}, 5);
+
+// var_dump($styles);
 
 /**
  * Load ACF field groups for blocks

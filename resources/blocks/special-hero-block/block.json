@@ -1,0 +1,14 @@
+{
+    "name": "acf/special-hero-block",
+    "title": "Special Hero Block",
+    "description": "This is a special hero block.  ",
+    "category": "qntm-global-blocks",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "special-hero-block.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true
+    }
+}

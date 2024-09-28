@@ -1,0 +1,160 @@
+{
+    "key": "group_66f45705e7678",
+    "title": "NKG Blocks Shared: ACF Setup",
+    "fields": [
+        {
+            "key": "field_66f457cdb2969",
+            "label": "Field Name",
+            "name": "acf_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This is basically the name of the field that will be referred to in code.  This will be used for both the variable in PHP, and the class name in CSS.  This should contain no capital letters, and dashes instead of spaces.  i.e. special_hero_content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f45706fa47f",
+            "label": "ACF Mode",
+            "name": "acf_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "child": "Child"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66f4574bb2967",
+            "label": "Title",
+            "name": "acf_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Human-readable title. This is will be visible in the block editor.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66f45706fa47f",
+                        "operator": "==",
+                        "value": "child"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f45795b2968",
+            "label": "Instructions",
+            "name": "acf_instructions",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional field instructions. Will appear next to the field.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66f45706fa47f",
+                        "operator": "==",
+                        "value": "child"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_66f4584eb296a",
+            "label": "Unique ID",
+            "name": "acf_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This needs to be a unique ID, it will be used by the system to identify this ACF group if you make any changes and re-export the code.  It is recommended you use some numbers to make it fully unique.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66f45706fa47f",
+                        "operator": "==",
+                        "value": "child"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1727529071
+}

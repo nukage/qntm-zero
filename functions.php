@@ -23,6 +23,7 @@ if (! function_exists('powder_zero_setup')) {
 		// Enqueue editor stylesheet.
 		add_theme_support('editor-styles');
 		add_editor_style('css/editor-style-blank.css');
+		add_editor_style(get_stylesheet_directory_uri() . '/css/app.css?v=' . filemtime(get_stylesheet_directory() . '/css/app.css'));
 		add_editor_style(get_template_directory_uri() . '/style.css');
 
 		// Remove core block patterns.

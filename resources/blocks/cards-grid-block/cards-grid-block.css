@@ -1,0 +1,15 @@
+.cards-grid-block {
+	@apply text-base bg-contrast p-50;
+	&__grid {
+		@apply grid gap-20 grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))];
+	}
+	&__card {
+		@apply bg-neutral p-20 block;
+	}
+	&__item-headline {
+		@apply mb-0 mt-20;
+	}
+	&__item-content {
+		@apply m-0;
+	}
+}

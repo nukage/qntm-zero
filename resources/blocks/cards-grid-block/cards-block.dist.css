@@ -1,0 +1,23 @@
+.cards-grid-block {
+    background-color: #25464A;
+    padding: clamp(35px, 5vw, 50px);
+    color: #ffffff
+}
+	.cards-grid-block__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(min(300px,100%),1fr));
+    gap: clamp(15px, 2vw, 20px)
+}
+	.cards-grid-block__card {
+    display: block;
+    background-color: #f5f5f5;
+    padding: clamp(15px, 2vw, 20px)
+}
+	.cards-grid-block__item-headline {
+    margin-bottom: 0;
+    margin-top: clamp(15px, 2vw, 20px)
+}
+	.cards-grid-block__item-content {
+    margin: 0
+}
+

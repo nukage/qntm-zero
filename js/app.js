@@ -24,6 +24,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/blocks/cards-grid-block/cards-grid-block.css":
+/*!****************************************************************!*\
+  !*** ./resources/blocks/cards-grid-block/cards-grid-block.css ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/blocks/text-image/text-image.css":
+/*!****************************************************!*\
+  !*** ./resources/blocks/text-image/text-image.css ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/editor-style.css":
 /*!****************************************!*\
   !*** ./resources/css/editor-style.css ***!
@@ -125,6 +151,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/editor-style": 0,
+/******/ 			"resources/blocks/text-image/text-image.dist": 0,
+/******/ 			"resources/blocks/cards-grid-block/cards-grid-block.dist": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
@@ -175,9 +203,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/editor-style","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/editor-style","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/editor-style","css/app"], () => (__webpack_require__("./resources/css/editor-style.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/blocks/cards-grid-block/cards-grid-block.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/blocks/text-image/text-image.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/css/editor-style.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

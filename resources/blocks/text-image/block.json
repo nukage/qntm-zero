@@ -1,0 +1,16 @@
+{
+    "name": "acf/text-image",
+    "title": "Text and Image",
+    "description": "Image on left, text on right.",
+    "category": "nkg-blocks",
+    "style": "text-image",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-image.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "jsx": false
+    }
+}

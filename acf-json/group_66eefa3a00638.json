@@ -1,0 +1,683 @@
+{
+    "key": "group_66eefa3a00638",
+    "title": "NKG Basic Block: Group",
+    "fields": [
+        {
+            "key": "field_66ef97832b900",
+            "label": "Blockmaker Group Options",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_66eefa3ad5eb0",
+            "label": "Name",
+            "name": "name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Unique name for BEM class, field key names, etc.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66eefa81ff003",
+            "label": "Container Type",
+            "name": "container_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "block": "Block",
+                "flex": "Flex",
+                "grid": "Grid"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66f417ca9e71d",
+            "label": "Grid Mode",
+            "name": "grid_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Auto": "Auto",
+                "Manual": "Manual",
+                "Custom": "Custom"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66eefb6f36b78",
+            "label": "Grid Columns",
+            "name": "grid_columns",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "grid"
+                    },
+                    {
+                        "field": "field_66f417ca9e71d",
+                        "operator": "==",
+                        "value": "Manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": 1,
+            "max": 12,
+            "allow_in_bindings": 1,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f4184a9e71e",
+            "label": "Grid Column Width",
+            "name": "grid_column_width",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Set the column width, Include units: px, rem, etc.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "grid"
+                    },
+                    {
+                        "field": "field_66f417ca9e71d",
+                        "operator": "==",
+                        "value": "Auto"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "300px",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f4194baf2a8",
+            "label": "Grid Template Columns",
+            "name": "grid_template_columns",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "grid-template-columns:",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "grid"
+                    },
+                    {
+                        "field": "field_66f417ca9e71d",
+                        "operator": "==",
+                        "value": "Custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "repeat(auto-fit, minmax(0, 1fr))",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66eefcb3e4222",
+            "label": "Flex Justification",
+            "name": "flex_justification",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "flex"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "justify-start": "Start",
+                "justify-center": "Center",
+                "justify-end": "End",
+                "justify-between": "Space Between",
+                "justify-around": "Space Around",
+                "justify-evenly": "Space Evenly"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66eefd605e3f7",
+            "label": "Flex Direction",
+            "name": "flex_direction",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "flex"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "flex-row": "Row",
+                "flex-col": "Column"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66eefdaf5e3f8",
+            "label": "Flex Wrap",
+            "name": "flex_wrap",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "==",
+                        "value": "flex"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "flex-wrap": "Wrap",
+                "flex-nowrap": "No Wrap"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66f439883069e",
+            "label": "Gap",
+            "name": "spacing_options",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66eefa81ff003",
+                        "operator": "!=",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "0",
+                "20": "20",
+                "30": "30",
+                "40": "40",
+                "50": "50",
+                "60": "60",
+                "70": "70",
+                "80": "80",
+                "block": "Block",
+                "custom": "Custom"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66f419fdbff7e",
+            "label": "ACF Options",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_66ef0d126b3a1",
+            "label": "Repeater Preview",
+            "name": "repeater_preview",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Note: Repeater preview only display in a page preview, not in the editor view.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "repeater"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": 2,
+            "max": 32,
+            "allow_in_bindings": 1,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66ef0c7389425",
+            "label": "ACF Mode",
+            "name": "acf_mode",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "parent": "Parent",
+                "repeater": "Repeater"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66f452f2fde87",
+            "label": "Title",
+            "name": "acf_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Human-readable title, this is will be visible in the block editor.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "parent"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "repeater"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f4533cfde88",
+            "label": "Description",
+            "name": "acf_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional block description. Will appear in the block editor.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "parent"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "repeater"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_66f454622088e",
+            "label": "Field Name",
+            "name": "acf_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This is basically the name of the block that it will be referred to in code. This should contain no capital letters, and dashes instead of spaces.  i.e. special-hero-block",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f45386fde89",
+            "label": "Unique ID",
+            "name": "acf_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This needs to be a unique ID, it will be used by the system to identify this ACF group if you make any changes and re-export the code.  It is recommended you use some numbers to make it fully unique.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "parent"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "repeater"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f56f1fd60ad",
+            "label": "Block Category",
+            "name": "acf_category",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "parent"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f57abf385a0",
+            "label": "Single Item Name",
+            "name": "acf_single_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "If this is a repeater field, this word describes a single item. For a repeater of cards, this would be 'Card' so that the ACF text can read 'Add Card' instead of 'Add Row'.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "repeater"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66f57bc9385a1",
+            "label": "Repeater Layout",
+            "name": "acf_repeater_layout",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef0c7389425",
+                        "operator": "==",
+                        "value": "repeater"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "table": "Table",
+                "block": "Block",
+                "row": "Row"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/nkg-group"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1727529032
+}

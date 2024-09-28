@@ -6,6 +6,24 @@
 require_once 'qntm-blocks.php'; // ACF Gutenberg Blocks
 require_once 'qntm-utilities.php'; // Utility Functions that are used in multiple blocks
 
+
+function alpine_register_script()
+{
+
+    wp_register_script('alpine', "//cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js", array(), '1.0.0', array('in_footer' => false, 'strategy' => 'defer'));
+}
+add_action('wp_enqueue_scripts', 'alpine_register_script');
+
+
+function editor_alpine_script()
+{
+
+    wp_enqueue_script('alpine', "//cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js", array(), '1.0.0', array('in_footer' => false, 'strategy' => 'defer'));
+}
+add_action('enqueue_block_editor_assets', 'editor_alpine_script');
+
+
+
 // function qntm_setup()
 // {
 
@@ -218,3 +236,36 @@ if (!function_exists('wpex_styles_dropdown')) {
     }
 }
 add_filter('tiny_mce_before_init', 'wpex_styles_dropdown');
+
+
+
+// Quickly render one line of ACF code
+function qntm_acf_render($content,  $class = '', $element = 'div',  $attrs = '')
+{
+    if (!$content) {
+        return;
+    }
+
+    $content = trim($content);
+    $content = wp_kses($content, false, false);
+
+    $renderOut = '<' . $element . ' class="' . $class . '"' . $attrs . '>' . $content . '</' . $element . '>';
+    return $renderOut;
+}
+
+
+// Custom routing - If we are to use blocks for EVERYTHING, this seems like a good way to have pagination.. just use query vars that get read by the block to display whatever, then change the route rules accordingly
+function custom_team_member_url_structure()
+{
+    add_rewrite_rule('^team-members/page/([0-9]+)/$', 'index.php?query-0-page=$matches[1]&pagename=team-members', 'top');
+}
+add_action('init', 'custom_team_member_url_structure');
+
+
+function add_my_query_vars($vars)
+{
+    // $vars[] = 'do'; // param name you want to handle on the page
+    $vars[] = 'query-0-page';
+    return $vars;
+}
+add_filter('query_vars', 'add_my_query_vars');

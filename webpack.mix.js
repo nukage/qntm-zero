@@ -41,8 +41,8 @@ function discover(dir, type) {
 
 discover(blockPath, '.css').forEach(file => {
     const outputDir = path.dirname(file);
-    const outputFile = path.basename(file, '.css') + '.compiled.css';
-    if (outputFile.includes('compiled.compiled')){
+    const outputFile = path.basename(file, '.css') + '.dist.css';
+    if (outputFile.includes('dist.dist')){
         return;
     }
     mix.postCss(file, `${outputDir}/${outputFile}`);

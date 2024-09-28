@@ -1,0 +1,12 @@
+.text-image {
+	@apply text-base bg-contrast p-80 rounded-lg grid gap-80 grid-cols-[1fr,1fr];
+	&__title {
+		@apply mb-20 mt-0 text-xl font-semi-bold;
+	}
+	&__content {
+		@apply mb-30;
+	}
+	&__link {
+		@apply no-underline shadow-lg rounded-lg text-base bg-alert p-30 mt-30 inline-block font-primary text-lg font-bold uppercase;
+	}
+}
