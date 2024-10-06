@@ -33,10 +33,12 @@ add_action('init', function () use ($styles) {
 
         if (file_exists(get_template_directory() . '/resources/blocks/' . $block . '/block.json')) {
             register_block_type(get_template_directory() . '/resources/blocks/' . $block . '/block.json');
-            if (file_exists(get_template_directory()  .  '/resources/blocks/' . $block . '/style.css')) {
-                // wp_register_style('qntm-' . $block, get_template_directory()  . '/resources/blocks/' . $block . '/style.css');
+            if (file_exists(get_template_directory()  .  '/resources/blocks/' . $block . '/' . $block . '.dist.css')) {
+                include get_template_directory() . '/resources/blocks/qntm-block-style.php';
             }
-            include get_template_directory() . '/resources/blocks/qntm-block-init.php';
+            if (file_exists(get_template_directory()  .  '/resources/blocks/' . $block . '/' . $block . '.js')) {
+                include get_template_directory() . '/resources/blocks/qntm-block-script.php';
+            }
         }
     }
 }, 5);

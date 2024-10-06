@@ -123,7 +123,7 @@ module.exports = {
         fontFamily: tailpress.fontFamMapper(tailpress.theme('settings.typography.fontFamilies', theme)),
     },
 	plugins: [
-		tailpress.tailwind,
+		// tailpress.tailwind,
         require("@tailwindcss/forms"),
 	],
 };

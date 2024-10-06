@@ -20,57 +20,6 @@
             "allow_in_bindings": 0
         },
         {
-            "key": "field_66ef11a717649",
-            "label": "Generate Random Text",
-            "name": "generate_random_text",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "allow_in_bindings": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_66ef11c31764a",
-            "label": "Text Length",
-            "name": "text_length",
-            "aria-label": "",
-            "type": "range",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_66ef11a717649",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "min": 1,
-            "max": 20,
-            "allow_in_bindings": 0,
-            "step": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_66f840106d45e",
             "label": "ACF Setup",
             "name": "",
@@ -129,5 +78,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727545395
+    "modified": 1727958800
 }

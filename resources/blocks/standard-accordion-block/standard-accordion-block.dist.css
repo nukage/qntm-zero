@@ -1,0 +1,23 @@
+.standard-accordion-block__section-header {
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: auto 30px;
+    background-color: #007CAD;
+    fill: #ffffff;
+    padding: 10px;
+    font-family: Inter, sans-serif;
+    color: #ffffff
+}
+.standard-accordion-block__section-header:hover {
+    fill: #FFCC1B
+}
+	.standard-accordion-block__section-title {
+    line-height: 1.75
+}
+	.standard-accordion-block__icon {
+    padding: 5px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms
+}
+

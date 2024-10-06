@@ -11,6 +11,19 @@
 
 /***/ }),
 
+/***/ "./resources/css/editor-style.css":
+/*!****************************************!*\
+  !*** ./resources/css/editor-style.css ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -37,10 +50,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/blocks/text-image/text-image.css":
-/*!****************************************************!*\
-  !*** ./resources/blocks/text-image/text-image.css ***!
-  \****************************************************/
+/***/ "./resources/blocks/cards-grid-query/cards-grid-query.css":
+/*!****************************************************************!*\
+  !*** ./resources/blocks/cards-grid-query/cards-grid-query.css ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -50,10 +63,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/editor-style.css":
-/*!****************************************!*\
-  !*** ./resources/css/editor-style.css ***!
-  \****************************************/
+/***/ "./resources/blocks/standard-accordion-block/standard-accordion-block.css":
+/*!********************************************************************************!*\
+  !*** ./resources/blocks/standard-accordion-block/standard-accordion-block.css ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/blocks/text-image/text-image.css":
+/*!****************************************************!*\
+  !*** ./resources/blocks/text-image/text-image.css ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -150,10 +176,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/editor-style": 0,
 /******/ 			"resources/blocks/text-image/text-image.dist": 0,
+/******/ 			"resources/blocks/standard-accordion-block/standard-accordion-block.dist": 0,
+/******/ 			"resources/blocks/cards-grid-query/cards-grid-query.dist": 0,
 /******/ 			"resources/blocks/cards-grid-block/cards-grid-block.dist": 0,
-/******/ 			"css/app": 0
+/******/ 			"css/app": 0,
+/******/ 			"css/editor-style": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -203,11 +231,13 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/blocks/cards-grid-block/cards-grid-block.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/blocks/text-image/text-image.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/editor-style","resources/blocks/text-image/text-image.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app"], () => (__webpack_require__("./resources/css/editor-style.css")))
+/******/ 	__webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/blocks/cards-grid-block/cards-grid-block.css")))
+/******/ 	__webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/blocks/cards-grid-query/cards-grid-query.css")))
+/******/ 	__webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/blocks/standard-accordion-block/standard-accordion-block.css")))
+/******/ 	__webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/blocks/text-image/text-image.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["resources/blocks/text-image/text-image.dist","resources/blocks/standard-accordion-block/standard-accordion-block.dist","resources/blocks/cards-grid-query/cards-grid-query.dist","resources/blocks/cards-grid-block/cards-grid-block.dist","css/app","css/editor-style"], () => (__webpack_require__("./resources/css/editor-style.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

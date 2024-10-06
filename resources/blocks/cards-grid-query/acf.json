@@ -1,0 +1,112 @@
+{
+    "key": "group_cards-grid-query-53234525",
+    "title": "Cards Grid Query Loop",
+    "fields": [
+        {
+            "key": "field_message_cards-grid-query-53234525",
+            "label": "Cards Grid Query Loop",
+            "name": "message_cards-grid-query",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "A grid of cards, with title and description",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_cards-grid-query-758764757632",
+            "label": "Title",
+            "name": "cards-grid-query__headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_cards-grid-query-3456345345",
+            "label": "Content",
+            "name": "cards-grid-query__content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "",
+            "media_upload": 0,
+            "toolbar": "minimal"
+        },
+        {
+            "key": "utility_classes_cards-grid-query-53234525",
+            "label": "Style Classes",
+            "name": "utility_classes",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select additional style options here.",
+            "required": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cards-grid-query--small": "Small Text",
+                "cards-grid-query--dark": "Dark Background"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/cards-grid-query"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "A grid of cards, with title and description",
+    "show_in_rest": 0
+}

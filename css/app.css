@@ -1,9 +1,15 @@
 /* @import "tailwindcss/base"; */
+.collapse {
+    visibility: collapse
+}
 .sticky {
     position: sticky
 }
 .m-0 {
     margin: 0
+}
+.m-10 {
+    margin: 10px
 }
 .m-20 {
     margin: clamp(15px, 2vw, 20px)
@@ -16,6 +22,9 @@
 }
 .m-40 {
     margin: clamp(30px, 4vw, 40px)
+}
+.m-5 {
+    margin: 5px
 }
 .m-50 {
     margin: clamp(35px, 5vw, 50px)
@@ -39,6 +48,10 @@
     margin-left: 0;
     margin-right: 0
 }
+.mx-10 {
+    margin-left: 10px;
+    margin-right: 10px
+}
 .mx-20 {
     margin-left: clamp(15px, 2vw, 20px);
     margin-right: clamp(15px, 2vw, 20px)
@@ -54,6 +67,10 @@
 .mx-40 {
     margin-left: clamp(30px, 4vw, 40px);
     margin-right: clamp(30px, 4vw, 40px)
+}
+.mx-5 {
+    margin-left: 5px;
+    margin-right: 5px
 }
 .mx-50 {
     margin-left: clamp(35px, 5vw, 50px);
@@ -83,6 +100,10 @@
     margin-top: 0;
     margin-bottom: 0
 }
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
 .my-20 {
     margin-top: clamp(15px, 2vw, 20px);
     margin-bottom: clamp(15px, 2vw, 20px)
@@ -98,6 +119,10 @@
 .my-40 {
     margin-top: clamp(30px, 4vw, 40px);
     margin-bottom: clamp(30px, 4vw, 40px)
+}
+.my-5 {
+    margin-top: 5px;
+    margin-bottom: 5px
 }
 .my-50 {
     margin-top: clamp(35px, 5vw, 50px);
@@ -126,6 +151,9 @@
 .mb-0 {
     margin-bottom: 0
 }
+.mb-10 {
+    margin-bottom: 10px
+}
 .mb-20 {
     margin-bottom: clamp(15px, 2vw, 20px)
 }
@@ -137,6 +165,9 @@
 }
 .mb-40 {
     margin-bottom: clamp(30px, 4vw, 40px)
+}
+.mb-5 {
+    margin-bottom: 5px
 }
 .mb-50 {
     margin-bottom: clamp(35px, 5vw, 50px)
@@ -159,6 +190,9 @@
 .ml-0 {
     margin-left: 0
 }
+.ml-10 {
+    margin-left: 10px
+}
 .ml-20 {
     margin-left: clamp(15px, 2vw, 20px)
 }
@@ -170,6 +204,9 @@
 }
 .ml-40 {
     margin-left: clamp(30px, 4vw, 40px)
+}
+.ml-5 {
+    margin-left: 5px
 }
 .ml-50 {
     margin-left: clamp(35px, 5vw, 50px)
@@ -192,6 +229,9 @@
 .mr-0 {
     margin-right: 0
 }
+.mr-10 {
+    margin-right: 10px
+}
 .mr-20 {
     margin-right: clamp(15px, 2vw, 20px)
 }
@@ -203,6 +243,9 @@
 }
 .mr-40 {
     margin-right: clamp(30px, 4vw, 40px)
+}
+.mr-5 {
+    margin-right: 5px
 }
 .mr-50 {
     margin-right: clamp(35px, 5vw, 50px)
@@ -225,6 +268,9 @@
 .mt-0 {
     margin-top: 0
 }
+.mt-10 {
+    margin-top: 10px
+}
 .mt-20 {
     margin-top: clamp(15px, 2vw, 20px)
 }
@@ -236,6 +282,9 @@
 }
 .mt-40 {
     margin-top: clamp(30px, 4vw, 40px)
+}
+.mt-5 {
+    margin-top: 5px
 }
 .mt-50 {
     margin-top: clamp(35px, 5vw, 50px)
@@ -310,6 +359,9 @@
 .min-w-1\/10 {
     min-width: 10%
 }
+.min-w-10 {
+    min-width: 10px
+}
 .min-w-2\/10 {
     min-width: 20%
 }
@@ -330,6 +382,9 @@
 }
 .min-w-40 {
     min-width: clamp(30px, 4vw, 40px)
+}
+.min-w-5 {
+    min-width: 5px
 }
 .min-w-5\/10 {
     min-width: 50%
@@ -382,6 +437,9 @@
 .max-w-1\/10 {
     max-width: 10%
 }
+.max-w-10 {
+    max-width: 10px
+}
 .max-w-2\/10 {
     max-width: 20%
 }
@@ -411,6 +469,9 @@
 }
 .max-w-4xl {
     max-width: 56rem
+}
+.max-w-5 {
+    max-width: 5px
 }
 .max-w-5\/10 {
     max-width: 50%
@@ -505,6 +566,13 @@
 .max-w-xs {
     max-width: 20rem
 }
+.rotate-90 {
+    --tw-rotate: 90deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+.cursor-pointer {
+    cursor: pointer
+}
 .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr))
 }
@@ -580,6 +648,9 @@
 .gap-0 {
     gap: 0
 }
+.gap-10 {
+    gap: 10px
+}
 .gap-20 {
     gap: clamp(15px, 2vw, 20px)
 }
@@ -591,6 +662,9 @@
 }
 .gap-40 {
     gap: clamp(30px, 4vw, 40px)
+}
+.gap-5 {
+    gap: 5px
 }
 .gap-50 {
     gap: clamp(35px, 5vw, 50px)
@@ -764,8 +838,14 @@
 .bg-origin-content {
     background-origin: content-box
 }
+.fill-base {
+    fill: #ffffff
+}
 .p-0 {
     padding: 0
+}
+.p-10 {
+    padding: 10px
 }
 .p-20 {
     padding: clamp(15px, 2vw, 20px)
@@ -778,6 +858,9 @@
 }
 .p-40 {
     padding: clamp(30px, 4vw, 40px)
+}
+.p-5 {
+    padding: 5px
 }
 .p-50 {
     padding: clamp(35px, 5vw, 50px)
@@ -798,6 +881,10 @@
     padding-left: 0;
     padding-right: 0
 }
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px
+}
 .px-20 {
     padding-left: clamp(15px, 2vw, 20px);
     padding-right: clamp(15px, 2vw, 20px)
@@ -813,6 +900,10 @@
 .px-40 {
     padding-left: clamp(30px, 4vw, 40px);
     padding-right: clamp(30px, 4vw, 40px)
+}
+.px-5 {
+    padding-left: 5px;
+    padding-right: 5px
 }
 .px-50 {
     padding-left: clamp(35px, 5vw, 50px);
@@ -838,6 +929,10 @@
     padding-top: 0;
     padding-bottom: 0
 }
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
 .py-20 {
     padding-top: clamp(15px, 2vw, 20px);
     padding-bottom: clamp(15px, 2vw, 20px)
@@ -853,6 +948,10 @@
 .py-40 {
     padding-top: clamp(30px, 4vw, 40px);
     padding-bottom: clamp(30px, 4vw, 40px)
+}
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px
 }
 .py-50 {
     padding-top: clamp(35px, 5vw, 50px);
@@ -877,6 +976,9 @@
 .pb-0 {
     padding-bottom: 0
 }
+.pb-10 {
+    padding-bottom: 10px
+}
 .pb-20 {
     padding-bottom: clamp(15px, 2vw, 20px)
 }
@@ -888,6 +990,9 @@
 }
 .pb-40 {
     padding-bottom: clamp(30px, 4vw, 40px)
+}
+.pb-5 {
+    padding-bottom: 5px
 }
 .pb-50 {
     padding-bottom: clamp(35px, 5vw, 50px)
@@ -907,6 +1012,9 @@
 .pl-0 {
     padding-left: 0
 }
+.pl-10 {
+    padding-left: 10px
+}
 .pl-20 {
     padding-left: clamp(15px, 2vw, 20px)
 }
@@ -918,6 +1026,9 @@
 }
 .pl-40 {
     padding-left: clamp(30px, 4vw, 40px)
+}
+.pl-5 {
+    padding-left: 5px
 }
 .pl-50 {
     padding-left: clamp(35px, 5vw, 50px)
@@ -937,6 +1048,9 @@
 .pr-0 {
     padding-right: 0
 }
+.pr-10 {
+    padding-right: 10px
+}
 .pr-20 {
     padding-right: clamp(15px, 2vw, 20px)
 }
@@ -948,6 +1062,9 @@
 }
 .pr-40 {
     padding-right: clamp(30px, 4vw, 40px)
+}
+.pr-5 {
+    padding-right: 5px
 }
 .pr-50 {
     padding-right: clamp(35px, 5vw, 50px)
@@ -967,6 +1084,9 @@
 .pt-0 {
     padding-top: 0
 }
+.pt-10 {
+    padding-top: 10px
+}
 .pt-20 {
     padding-top: clamp(15px, 2vw, 20px)
 }
@@ -978,6 +1098,9 @@
 }
 .pt-40 {
     padding-top: clamp(30px, 4vw, 40px)
+}
+.pt-5 {
+    padding-top: 5px
 }
 .pt-50 {
     padding-top: clamp(35px, 5vw, 50px)
@@ -1186,67 +1309,17 @@
 .outline {
     outline-style: solid
 }
-.w-wide {
-    max-width: 1280px
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms
 }
-.w-content {
-    width: 960px
+.duration-300 {
+    transition-duration: 300ms
 }
-.max-w-wide {
-    max-width: 1280px
-}
-.max-w-content {
-    max-width: 960px
-}
-.alignfull {
-    margin: 0.5rem calc(50% - 50vw) !important;
-    max-width: 100vw !important;
-    width: 100vw
-}
-.alignwide {
-    margin: 0.5rem 0;
-    max-width: 1280px !important
-}
-.alignnone {
-    margin-left: 0;
-    margin-right: 0;
-    height: auto;
-    max-width: 100%
-}
-.aligncenter {
-    margin: 0.5rem auto;
-    display: block
-}
-@media (min-width: 600px) {
-    .alignleft:not(.wp-block-button) {
-        margin-right: 0.5rem;
-        float: left
-    }
-    .alignright:not(.wp-block-button) {
-        margin-left: 0.5rem;
-        float: right
-    }
-    .wp-block-button.alignleft a {
-        float: left;
-        margin-right: 0.25rem
-    }
-    .wp-block-button.alignright a {
-        float: right;
-        margin-left: 0.25rem
-    }
-}
-.wp-caption {
-    display: inline-block
-}
-.wp-caption img {
-    margin-bottom: 0.5rem;
-    line-height: none
-}
-.wp-caption-text {
-    font-size: 1;
-    color: #718096
-}
-body .wp-block-heading {
-    margin-bottom: clamp(15px, 2vw, 20px)
-}
+/* body {
+	.wp-block-heading {
+		@apply mb-20;
+	}
+} */
 

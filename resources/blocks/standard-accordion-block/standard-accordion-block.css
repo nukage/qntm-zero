@@ -1,0 +1,11 @@
+.standard-accordion-block {
+	&__section-header {
+		@apply cursor-pointer text-base bg-primary font-secondary p-10 grid grid-cols-[auto,30px] fill-base hover:fill-tertiary;
+	}
+	&__section-title {
+		@apply leading-large;
+	}
+	&__icon {
+		@apply transition-all duration-300 p-[5px];
+	}
+}

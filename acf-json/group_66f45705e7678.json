@@ -39,7 +39,8 @@
             },
             "choices": {
                 "none": "None",
-                "child": "Child"
+                "child": "Child",
+                "php": "Dynamic"
             },
             "default_value": false,
             "return_format": "value",
@@ -136,6 +137,64 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_66fd31ed472d3",
+            "label": "PHP Setup",
+            "name": "php_setup",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Set up your content by adding the necessary PHP here.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66f45706fa47f",
+                        "operator": "==",
+                        "value": "php"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "$field_text = get_the_title();",
+            "new_lines": ""
+        },
+        {
+            "key": "field_66fd314f472d2",
+            "label": "Content Variable or Function",
+            "name": "content_variable",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Instead of using get_field(), this will use a variable name to call this content.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66f45706fa47f",
+                        "operator": "==",
+                        "value": "php"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "$field_text",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -156,5 +215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727529071
+    "modified": 1727872886
 }

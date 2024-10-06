@@ -155,6 +155,16 @@
 					"slug": "0"
 				},
 				{
+					"name": "5",
+					"size": "5px",
+					"slug": "5"
+				},
+				{
+					"name": "10",
+					"size": "10px",
+					"slug": "10"
+				},
+				{
 					"name": "20",
 					"size": "clamp(15px, 2vw, 20px)",
 					"slug": "20"
@@ -499,7 +509,7 @@
 					}
 				}
 			},
-			"core/heading": {
+			"core/headingz": {
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
 				},

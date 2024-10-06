@@ -1,6 +1,7 @@
 <div class="text-image">
     <div class="acf-innerblocks-container">
-        <?php echo nkg_create_image_tag(get_field('text-image__image', 'full'), 'text-image__image'); ?>
+        <?php echo  get_field('text-image__image'); ?>
+        <?php echo nkg_create_image_tag(get_field('text-image__image'), 'text-image__image'); ?>
 
     </div>
     <div class="acf-innerblocks-container">

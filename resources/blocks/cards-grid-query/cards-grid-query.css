@@ -1,0 +1,14 @@
+.cards-grid-query {
+	@apply my-block;
+	&__grid {
+		@apply my-50 grid gap-20 grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))];
+	}
+	&__item {
+		@apply bg-neutral p-20 block;
+	}
+	&__item-title {
+	}
+	&__item-content {
+		@apply m-0;
+	}
+}

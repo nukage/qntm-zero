@@ -1,6 +1,6 @@
 {
     "key": "group_66ef118f98d7e",
-    "title": "NKG Basic Block: Textarea",
+    "title": "NKG Basic Block: Text",
     "fields": [
         {
             "key": "field_66ef118f17648",
@@ -33,16 +33,16 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "message": "",
             "default_value": 0,
             "allow_in_bindings": 0,
-            "ui": 0,
             "ui_on_text": "",
-            "ui_off_text": ""
+            "ui_off_text": "",
+            "ui": 1
         },
         {
             "key": "field_66ef11c31764a",
@@ -62,12 +62,12 @@
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "min": 1,
+            "min": 0,
             "max": 500,
             "allow_in_bindings": 0,
             "step": "",
@@ -75,9 +75,9 @@
             "append": ""
         },
         {
-            "key": "field_66ef1685606cd",
-            "label": "Element",
-            "name": "element",
+            "key": "field_66ff10e9543d9",
+            "label": "Input Field",
+            "name": "acf_input_field",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -89,8 +89,110 @@
                 "id": ""
             },
             "choices": {
+                "Text": "Text",
+                "Textarea": "Textarea",
+                "WYSIWYG": "WYSIWYG",
+                "Number": "Number"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_670001b83bbba",
+            "label": "WSIWYG Toolbar",
+            "name": "acf_toolbar_options",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ff10e9543d9",
+                        "operator": "==",
+                        "value": "WYSIWYG"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_670001b83bbba",
+            "label": "WSIWYG Toolbar",
+            "name": "acf_toolbar_options",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ff10e9543d9",
+                        "operator": "==",
+                        "value": "WYSIWYG"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_66ef1685606cd",
+            "label": "Element",
+            "name": "element",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ff10e9543d9",
+                        "operator": "!=",
+                        "value": "WYSIWYG"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
                 "div": "div",
                 "span": "span",
+                "a": "a",
                 "p": "p",
                 "h1": "h1",
                 "h2": "h2",
@@ -147,6 +249,35 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
+        },
+        {
+            "key": "field_66fd4d8d11680",
+            "label": "Link Source Variable",
+            "name": "link_var",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "If you have 'a' selected as an element, this is a dynamic variable that works in conjunction with the 'Dynamic' ACF mode.  Add your variable name here, and define that variable in the PHP box.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66ef1685606cd",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -167,5 +298,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727529052
+    "modified": 1728053792
 }
