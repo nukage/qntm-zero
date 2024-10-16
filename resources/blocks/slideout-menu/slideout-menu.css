@@ -1,5 +1,5 @@
 .slideout-nav {
-	@apply max-xs:w-full px-50 sm:px-80 md:px-120 top-0 right-0 fixed bg-white  h-full flex flex-col justify-center items-center font-primary  z-10 text-contrast;
+	@apply max-xs:w-full px-50 sm:px-80 md:px-[120px] top-0 right-0 fixed bg-base h-full flex flex-col justify-center items-center font-primary  z-10 text-contrast;
 
 	&.active {
 		box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.24);
@@ -9,10 +9,10 @@
 	}
 
 	&__toggle {
-		@apply bg-tertiary fixed right-0 top-0 py-50 md:py-80 px-7 md:px-12  md:hover:bg-secondary z-[11];
-		img {
+		@apply bg-tertiary fixed right-0 top-0 py-50 md:py-80 px-[7px] md:px-[12px]  md:hover:bg-secondary z-[11];
+		/* img {
 			@apply max-md:w-25;
-		}
+		} */
 		&:hover img,
 		&.active img {
 			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
@@ -34,15 +34,15 @@
 		@apply w-full md:w-[38rem];
 		> li {
 			/* TOP LEVEL MENU ITEMS */
-			@apply px-15 text-2x-lg text-primary font-600 pb-24 my-20 hover:text-secondary  relative;
-			&:not(:last-child) {
+			@apply px-[15px] text-two-x-lg text-primary font-semi-bold pb-[24px] my-20 hover:text-secondary  relative;
+			/* &:not(:last-child) {
 				@apply border-b-[2px] border-primary border-dotted;
-			}
+			} */
 			> a img {
 				@apply transition-opacity duration-200 absolute right-0 top-0;
 			}
 			> a .carbon {
-				@apply relative inline-block h-[2.7rem] w-32 left-5;
+				@apply relative inline-block h-[2.7rem] w-[32px] left-5;
 			}
 
 			.img_carbon_arrow-right-green {
@@ -71,7 +71,7 @@
 
 			> ul {
 				/* SUBMENU */
-				@apply font-secondary font-500 mt-10;
+				@apply font-secondary font-semi-bold mt-10;
 				> li {
 					@apply text-contrast  text-md   mb-5;
 					a {

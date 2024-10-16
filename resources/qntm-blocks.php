@@ -39,6 +39,9 @@ add_action('init', function () use ($styles) {
             if (file_exists(get_template_directory()  .  '/resources/blocks/' . $block . '/' . $block . '.js')) {
                 include get_template_directory() . '/resources/blocks/qntm-block-script.php';
             }
+            if (file_exists(get_template_directory() . '/resources/blocks/' . $block . '/init.php')) {
+                include_once get_template_directory() . '/resources/blocks/' . $block . '/init.php';
+            }
         }
     }
 }, 5);

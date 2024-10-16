@@ -3,8 +3,8 @@
     "title": "Slideout Menu",
     "description": "A hamburger menu that slides out from the side",
     "category": "qntm-global-blocks",
-    "script": "qntm-slideout-menu",
-    "style": "qntm-slideout-menu",
+    "script": "slideout-menu",
+    "style": "slideout-menu",
     "icon": "images/icon.svg",
     "keywords": [
         "expand",
@@ -19,5 +19,8 @@
     "supports": {
         "anchor": true,
         "align": false
-    }
+    },
+    "dependencies": [
+        "jquery"
+    ]
 }

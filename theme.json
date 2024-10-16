@@ -112,31 +112,31 @@
 		},
 		"custom": {
 			"fontWeight": {
-				"thin": 100,
-				"extra-light": 200,
-				"light": 300,
-				"regular": 400,
-				"medium": 500,
-				"semi-bold": 600,
+				"black": 900,
 				"bold": 700,
 				"extra-bold": 800,
-				"black": 900
+				"extra-light": 200,
+				"light": 300,
+				"medium": 500,
+				"regular": 400,
+				"semi-bold": 600,
+				"thin": 100
 			},
 			"lineHeight": {
-				"x-small": 1.1000000000000001,
-				"small": 1.25,
-				"medium": 1.5,
 				"large": 1.75,
-				"x-large": 2
+				"medium": 1.5,
+				"small": 1.25,
+				"x-large": 2,
+				"x-small": 1.1000000000000001
 			},
 			"width": {
-				"1/8": "12.5%",
-				"1/16": "6.25%",
 				"1/12": "8.333333333333334%",
-				"1/5": "20%",
-				"1/4": "25%",
-				"1/3": "33.333333333333336%",
+				"1/16": "6.25%",
 				"1/2": "50%",
+				"1/3": "33.333333333333336%",
+				"1/4": "25%",
+				"1/5": "20%",
+				"1/8": "12.5%",
 				"3/4": "75%",
 				"full": "100%",
 				"screen": "100vw"
@@ -355,6 +355,61 @@
 					"fontFamily": "Saira, sans-serif",
 					"name": "Saira",
 					"slug": "primary"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Yanone Kaffeesatz\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/yanone-kaffeesatz/yanone-kaffeesatz-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Yanone Kaffeesatz\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/yanone-kaffeesatz/yanone-kaffeesatz-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Yanone Kaffeesatz\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/yanone-kaffeesatz/yanone-kaffeesatz-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Yanone Kaffeesatz\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/yanone-kaffeesatz/yanone-kaffeesatz-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Yanone Kaffeesatz\"",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/yanone-kaffeesatz/yanone-kaffeesatz-300-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Yanone Kaffeesatz\"",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/yanone-kaffeesatz/yanone-kaffeesatz-200-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Yanone Kaffeesatz\", sans-serif",
+					"name": "Yanone Kaffeesatz",
+					"slug": "yanone-kaffeesatz"
 				}
 			],
 			"fontSizes": [
@@ -509,19 +564,12 @@
 					}
 				}
 			},
-			"core/headingz": {
-				"color": {
-					"text": "var(--wp--preset--color--primary)"
-				},
-				"elements": {
-					"link": {
-						"color": {
-							"text": "var(--wp--preset--color--primary)"
-						}
+			"core/heading": {
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--5)",
+						"top": "var(--wp--preset--spacing--5)"
 					}
-				},
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--saira)"
 				}
 			},
 			"core/list": {
@@ -541,13 +589,19 @@
 			},
 			"core/paragraph": {
 				"color": {
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--primary)"
 				},
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--contrast)"
+							"text": "var(--wp--preset--color--primary)"
 						}
+					}
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--10)",
+						"top": "var(--wp--preset--spacing--0)"
 					}
 				}
 			},
@@ -740,29 +794,29 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--5x-lg)"
+					"fontSize": "var(--wp--preset--font-size--five-x-lg)"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--four-x-lg)",
 					"fontStyle": "normal",
-					"fontWeight": "900"
+					"fontWeight": "700"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--3x-lg)"
+					"fontSize": "var(--wp--preset--font-size--three-x-lg)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--2x-lg)"
+					"fontSize": "var(--wp--preset--font-size--two-x-lg)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--x-lg)"
+					"fontSize": "var(--wp--preset--font-size--xl)"
 				}
 			},
 			"h6": {
@@ -772,10 +826,11 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--saira)",
+					"fontFamily": "var(--wp--preset--font-family--primary)",
 					"fontStyle": "normal",
 					"fontWeight": "700",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"lineHeight": "var(--wp--custom--line-height--x-small)",
+					"textTransform": "none"
 				}
 			},
 			"link": {
@@ -799,7 +854,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--inter)",
+			"fontFamily": "var(--wp--preset--font-family--secondary)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"fontWeight": "var(--wp--custom--font-weight--light)",
 			"lineHeight": "1.5"
